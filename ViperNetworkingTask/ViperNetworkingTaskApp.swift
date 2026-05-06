@@ -21,7 +21,7 @@ struct ViperNetworkingTaskApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack(path: $router.path) {
-                ProductListView<ProductListPresenter>(presenter: appContainer.makeProductListPresenter())
+                ProductListView(presenter: appContainer.makeProductListPresenter())
                     .navigationDestination(for: AppRouterPath.self, destination: { router in
                         switch router {
                         case .productDetails(let id):

@@ -47,7 +47,7 @@ struct ProductListView<P: ProductListPresenterProtocol>: View where P: Observabl
         ScrollView(showsIndicators: false) {
             ForEach(products, id: \.id) { product in
                 HStack(spacing: 10) {
-                    AsyncImage(url: URL(string: product.thumbnail)) { Image in
+                    AsyncImage(url: product.thumbnail) { Image in
                         Image
                             .resizable()
                     } placeholder: {

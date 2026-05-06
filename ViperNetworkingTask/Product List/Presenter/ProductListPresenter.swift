@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 @MainActor
-protocol ProductListPresenterProtocol: ObservableObject {
+protocol ProductListPresenterProtocol: AnyObject, ObservableObject {
     var uiState: UIState<[Product]> {get}
     var searchText: String {get set}
     var filteredProductList: [Product] {get}
@@ -39,7 +39,7 @@ final class ProductListPresenter: ProductListPresenterProtocol {
             products.filter({
                 $0.title.localizedCaseInsensitiveContains(searchText) ||
                 $0.description.localizedCaseInsensitiveContains(searchText) ||
-                $0.brand?.localizedCaseInsensitiveContains(searchText) == true ||
+                $0.brand.localizedCaseInsensitiveContains(searchText) == true ||
                 $0.price == Double(searchText) ||
                 $0.rating == Double(searchText) ||
                 $0.stock == Int(searchText)

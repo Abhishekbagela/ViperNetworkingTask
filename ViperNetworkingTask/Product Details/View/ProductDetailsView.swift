@@ -92,7 +92,7 @@ struct ProductDetailsView<P: ProductDetailPresenterProtocol>: View {
         }
     }
     
-    private func productReviewView(reviews: [Review]) -> some View {
+    private func productReviewView(reviews: [ReviewDTO]) -> some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
                 Text("Reviews")

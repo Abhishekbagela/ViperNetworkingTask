@@ -20,7 +20,8 @@ class ProductDetailInteractor: ProductDetailInteractorProtocol {
     }
     
     func getProduct(id: Int) async throws -> Product {
-        try await networkManager.fetch(urlStr: APIUrl.productDetails(id: id))
+        let productDTO: ProductDTO = try await networkManager.fetch(urlStr: APIUrl.productDetails(id: id))
+        return Mapper.toProduct(dto: productDTO)
     }
         
 }

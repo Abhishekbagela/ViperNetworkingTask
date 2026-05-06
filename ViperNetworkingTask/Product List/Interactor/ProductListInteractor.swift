@@ -19,8 +19,14 @@ class ProductListInteractor: ProductListInteractorProtocol {
     }
     
     func getProductList() async throws -> [Product] {
-        let response: ProductResponse = try await networkManager.fetch(urlStr: .productList)
-        return response.products
+        // 1. Fetch DTOs
+        let response: ProductResponseDTO = try await networkManager.fetch(urlStr: .productList)
+
+        // 2. Map DTOs to pure Domain Entities
+        let domainProducts = response.products.map { Mapper.toProduct(dto: $0) }
+        
+        // 3. Return clean models
+        return domainProducts
     }
     
 }

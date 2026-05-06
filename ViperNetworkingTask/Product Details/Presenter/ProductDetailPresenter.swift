@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 @MainActor
-protocol ProductDetailPresenterProtocol: ObservableObject {
+protocol ProductDetailPresenterProtocol: AnyObject, ObservableObject {
     var uiState: UIState<Product> {get set}
     var title: String {get set}
     func getProductDetails(_ id: Int) async

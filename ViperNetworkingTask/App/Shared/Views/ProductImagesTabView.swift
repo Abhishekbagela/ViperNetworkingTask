@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductImagesTabView: View {
-    let images: [String]
+    let images: [URL?]
     @State var selectedTab: Int = 0
     
     var totalImages: Int {

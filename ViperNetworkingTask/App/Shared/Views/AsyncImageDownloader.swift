@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct AsyncImageDownloader: View {
-    let url: String
+    let url: URL?
     
     var body: some View {
-        AsyncImage(url: URL(string: url)) { Image in
+        AsyncImage(url: url) { Image in
             Image
                 .resizable()
                 .scaledToFill()
@@ -24,8 +24,6 @@ struct AsyncImageDownloader: View {
     }
 }
 
-
-
 #Preview {
-    AsyncImageDownloader(url: "")
+    AsyncImageDownloader(url: URL(string: "https://picsum.photos/200/300")!)
 }
