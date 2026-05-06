@@ -1,0 +1,12 @@
+{
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/App/Dependency/AppContainer.swift" : {
+    "abi-baseline-json" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask.abi.json",
+    "const-values" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary.swiftconstvalues",
+    "dependencies" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary.d",
+    "diagnostics" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary.dia",
+    "objc-header" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-Swift.h",
+    "swiftdoc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask.swiftdoc",
+    "swiftmodule" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask.swiftmodule",
+    "swiftsourceinfo" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask.swiftsourceinfo"
+  }
+}

@@ -1,0 +1,16 @@
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/App/Dependency/AppContainer.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/App/Logger/Loger.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/App/Router/AppRouter.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Network/NetworkManager.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product\ Details/Interector/ProductDetailInterector.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product\ Details/Presenter/ProductDetailPresenter.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product\ Details/View/ProductDetailsView.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product\ List/Entity/Product.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product\ List/Interactor/ProductListInterector.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product\ List/Presenter/ProductListPresenter.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product\ List/VIew/ProductListView.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Utility/DateUtility.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Utility/JsonUtility.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/ContentView.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/ViperNetworkingTaskApp.swift
+/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/DerivedSources/GeneratedAssetSymbols.swift

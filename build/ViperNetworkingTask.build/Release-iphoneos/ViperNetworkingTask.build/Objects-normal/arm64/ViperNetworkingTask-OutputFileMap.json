@@ -1,0 +1,91 @@
+{
+  "" : {
+    "const-values" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary.swiftconstvalues",
+    "dependencies" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary.d",
+    "diagnostics" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary.dia",
+    "emit-module-dependencies" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary-emit-module.dia",
+    "pch" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTask-primary.swiftdeps"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/App/Dependency/AppContainer.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/AppContainer.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/AppContainer.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/AppContainer.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/App/Logger/Loger.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/Loger.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/Loger.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/Loger.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/App/Router/AppRouter.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/AppRouter.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/AppRouter.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/AppRouter.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/ContentView.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Network/NetworkManager.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/NetworkManager.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/NetworkManager.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/NetworkManager.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product Details/Interector/ProductDetailInterector.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductDetailInterector.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductDetailInterector.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductDetailInterector.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product Details/Presenter/ProductDetailPresenter.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductDetailPresenter.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductDetailPresenter.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductDetailPresenter.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product Details/View/ProductDetailsView.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductDetailsView.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductDetailsView.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductDetailsView.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product List/Entity/Product.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/Product.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/Product.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/Product.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product List/Interactor/ProductListInterector.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductListInterector.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductListInterector.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductListInterector.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product List/Presenter/ProductListPresenter.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductListPresenter.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductListPresenter.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductListPresenter.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Product List/VIew/ProductListView.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductListView.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductListView.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ProductListView.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Utility/DateUtility.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/DateUtility.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/DateUtility.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/DateUtility.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/Utility/JsonUtility.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/JsonUtility.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/JsonUtility.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/JsonUtility.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/ViperNetworkingTask/ViperNetworkingTaskApp.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTaskApp.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTaskApp.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/ViperNetworkingTaskApp.o"
+  },
+  "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/ViperNetworkingTask.build/Release-iphoneos/ViperNetworkingTask.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}
