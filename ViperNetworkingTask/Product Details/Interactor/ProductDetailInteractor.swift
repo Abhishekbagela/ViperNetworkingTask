@@ -8,20 +8,18 @@
 import Foundation
 
 protocol ProductDetailInteractorProtocol: AnyObject {
-    
     func getProduct(id: Int) async throws -> Product
 }
 
-class ProductDetailInteractor: ProductDetailInteractorProtocol {
+final class ProductDetailInteractor: ProductDetailInteractorProtocol {
     
-    let networkManager: NetworkManagerProtocol
-    init(networkManager: NetworkManagerProtocol) {
-        self.networkManager = networkManager
+    let fetchProductDetailUseCase: FetchProductDetailUseCaseProtocol
+    init(fetchProductDetailUseCase: FetchProductDetailUseCaseProtocol) {
+        self.fetchProductDetailUseCase = fetchProductDetailUseCase
     }
     
     func getProduct(id: Int) async throws -> Product {
-        let productDTO: ProductDTO = try await networkManager.fetch(urlStr: APIUrl.productDetails(id: id))
-        return Mapper.toProduct(dto: productDTO)
+        try await fetchProductDetailUseCase.execute(id: id)
     }
         
 }

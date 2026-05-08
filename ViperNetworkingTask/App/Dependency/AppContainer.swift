@@ -14,32 +14,41 @@ final class AppContainer: ObservableObject {
         self.router = router
     }
     
+    //MARK: Common
+    
     lazy var networkManager = {
         NetworkManager()
     }()
- 
-    lazy var productListInteractor = {
-        ProductListInteractor(networkManager: networkManager)
+    
+    //MARK: UseCase
+    
+    lazy var fetchProductListUseCase = {
+        FetchProductListUseCase(networkManager: networkManager)
     }()
     
-//    lazy var productListPresenter = {
-//        ProductListPresenter(productListInteractor: productListInteractor)
-//    }()
+    lazy var fetchProductDetailUseCase = {
+        FetchProductDetailUseCase(networkManager: networkManager)
+    }()
+ 
+    //MARK: Interactor
     
-    func makeProductListPresenter() -> ProductListPresenter {
-        ProductListPresenter(productListInteractor: productListInteractor, router: router)
-    }
+    lazy var productListInteractor = {
+        ProductListInteractor(fetchProductListUseCase: fetchProductListUseCase)
+    }()
     
     lazy var productDetailInteractor = {
-        ProductDetailInteractor(networkManager: networkManager)
+        ProductDetailInteractor(fetchProductDetailUseCase: fetchProductDetailUseCase)
     }()
     
-//    lazy var productDetailsPresentor = {
-//        ProductDetailPresenter(productDetailInteractor: productDetailInteractor)
-//    }()
+    
+    //MARK: Presenter
     
     //For ObservableObjects(VM) always use method instead of lazy var to reuse the same objectPre
     func makeProductDetailPresenter() -> ProductDetailPresenter {
         ProductDetailPresenter(productDetailInteractor: productDetailInteractor)
+    }
+    
+    func makeProductListPresenter() -> ProductListPresenter {
+        ProductListPresenter(productListInteractor: productListInteractor, router: router)
     }
 }

@@ -13,20 +13,13 @@ protocol ProductListInteractorProtocol {
 
 class ProductListInteractor: ProductListInteractorProtocol {
     
-    let networkManager: NetworkManagerProtocol
-    init(networkManager: NetworkManagerProtocol) {
-        self.networkManager = networkManager
+    let fetchProductListUseCase: FetchProductListUseCaseProtocol
+    init(fetchProductListUseCase: FetchProductListUseCaseProtocol) {
+        self.fetchProductListUseCase = fetchProductListUseCase
     }
     
     func getProductList() async throws -> [Product] {
-        // 1. Fetch DTOs
-        let response: ProductResponseDTO = try await networkManager.fetch(urlStr: .productList)
-
-        // 2. Map DTOs to pure Domain Entities
-        let domainProducts = response.products.map { Mapper.toProduct(dto: $0) }
-        
-        // 3. Return clean models
-        return domainProducts
+       try await fetchProductListUseCase.execute()
     }
     
 }

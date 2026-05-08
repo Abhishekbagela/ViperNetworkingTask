@@ -129,7 +129,9 @@ struct ProductDetailsView<P: ProductDetailPresenterProtocol>: View {
         id: 12, //45
         productDetailsPresenter: ProductDetailPresenter(
             productDetailInteractor: ProductDetailInteractor(
-                networkManager: NetworkManager()
+                fetchProductDetailUseCase: FetchProductDetailUseCase(
+                    networkManager: NetworkManager()
+                )
             )
         )
     )
