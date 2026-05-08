@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'ViperNetworkingTask' in project 'ViperNetworkingTask' (no dependencies)

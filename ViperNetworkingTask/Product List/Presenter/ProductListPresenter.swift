@@ -46,7 +46,7 @@ final class ProductListPresenter: ProductListPresenterProtocol {
             })
         }
     }
-
+    
     func getProducts() async {
         uiState = .loading
         
@@ -57,7 +57,7 @@ final class ProductListPresenter: ProductListPresenterProtocol {
             uiState = .failure(error)
         }
     }
- 
+    
     func didSelectProduct(id: Int) {
         router.sendToDetail(id: id)
     }

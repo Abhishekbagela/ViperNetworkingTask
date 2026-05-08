@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import Inject
 
 struct ProductListView<P: ProductListPresenterProtocol>: View where P: ObservableObject {
+    @ObserveInjection var inject
     @StateObject var presenter: P
     
     init(presenter: P) {
@@ -33,6 +35,7 @@ struct ProductListView<P: ProductListPresenterProtocol>: View where P: Observabl
                 productListView(presenter.filteredProductList)
             }
         }
+        .enableInjection()
         .navigationTitle(Text("Products"))
         .task {
             await presenter.getProducts()
@@ -40,7 +43,7 @@ struct ProductListView<P: ProductListPresenterProtocol>: View where P: Observabl
         .refreshable {
             await presenter.getProducts()
         }
-        .searchable(text: $presenter.searchText, prompt: "Search Products...")
+        .searchable(text: $presenter.searchText, prompt: "Find...")
     }
     
     private func productListView(_ products: [Product]) -> some View {
@@ -79,15 +82,6 @@ struct ProductListView<P: ProductListPresenterProtocol>: View where P: Observabl
         }
     }
 }
-
-//#Preview {
-//    ProductListView<ProductListPresenter>(
-//        presenter: ProductListPresenter(
-//            productListInteractor: AppContainer(router: AppRouter()).productListInteractor,
-//            router: AppRouter()
-//        )
-//    )
-//}
 
 #Preview {
     ProductListView<ProductListPresenter>(

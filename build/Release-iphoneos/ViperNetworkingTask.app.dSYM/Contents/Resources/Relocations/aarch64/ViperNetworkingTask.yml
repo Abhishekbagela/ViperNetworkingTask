@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/abhishekbagela/Projects/Apps/ViperNetworkingTask/build/Release-iphoneos/ViperNetworkingTask.app/ViperNetworkingTask'
-relocations:     []
-...

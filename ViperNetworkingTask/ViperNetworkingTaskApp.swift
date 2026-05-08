@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import Inject
 
 @main
 struct ViperNetworkingTaskApp: App {
+    
+    
+    @ObserveInjection var inject
     @StateObject var router: AppRouter
     @StateObject var appContainer: AppContainer
     
@@ -30,6 +34,7 @@ struct ViperNetworkingTaskApp: App {
                     })
             }
             .environmentObject(appContainer)
+            .enableInjection()
         }
     }
 }

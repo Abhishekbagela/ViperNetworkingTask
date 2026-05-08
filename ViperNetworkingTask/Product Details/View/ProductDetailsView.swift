@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Inject
 
 /// ProductDetailsView
 struct ProductDetailsView<P: ProductDetailPresenterProtocol>: View {
+    @ObserveInjection var inject
     @StateObject var productDetailsPresenter: P
     
     let id: Int
@@ -37,6 +39,7 @@ struct ProductDetailsView<P: ProductDetailPresenterProtocol>: View {
                     .font(.title2)
             }
         }
+        .enableInjection()
         .navigationTitle(Text(productDetailsPresenter.title))
         .navigationBarTitleDisplayMode(.inline)
         .task {
