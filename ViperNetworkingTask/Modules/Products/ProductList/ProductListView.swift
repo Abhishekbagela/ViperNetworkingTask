@@ -84,10 +84,9 @@ struct ProductListView<P: ProductListPresenterProtocol>: View where P: Observabl
     ProductListView<ProductListPresenter>(
         presenter: ProductListPresenter(
             productListInteractor: ProductListInteractor(
-                fetchProductListUseCase: FetchProductListUseCase(
-                    networkManager: NetworkManager()
-                )
-            ), router: AppRouter()
+                networkManager: NetworkManager()
+            ),
+            router: AppRouter()
         )
     )
 }

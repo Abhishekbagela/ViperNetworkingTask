@@ -19,25 +19,15 @@ final class AppContainer: ObservableObject {
     lazy var networkManager = {
         NetworkManager()
     }()
-    
-    //MARK: UseCase
-    
-    lazy var fetchProductListUseCase = {
-        FetchProductListUseCase(networkManager: networkManager)
-    }()
-    
-    lazy var fetchProductDetailUseCase = {
-        FetchProductDetailUseCase(networkManager: networkManager)
-    }()
- 
+        
     //MARK: Interactor
     
     lazy var productListInteractor = {
-        ProductListInteractor(fetchProductListUseCase: fetchProductListUseCase)
+        ProductListInteractor(networkManager: networkManager)
     }()
     
     lazy var productDetailInteractor = {
-        ProductDetailInteractor(fetchProductDetailUseCase: fetchProductDetailUseCase)
+        ProductDetailInteractor(networkManager: networkManager)
     }()
     
     

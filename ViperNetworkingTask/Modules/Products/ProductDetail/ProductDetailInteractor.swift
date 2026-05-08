@@ -13,13 +13,14 @@ protocol ProductDetailInteractorProtocol: AnyObject {
 
 final class ProductDetailInteractor: ProductDetailInteractorProtocol {
     
-    let fetchProductDetailUseCase: FetchProductDetailUseCaseProtocol
-    init(fetchProductDetailUseCase: FetchProductDetailUseCaseProtocol) {
-        self.fetchProductDetailUseCase = fetchProductDetailUseCase
+    let networkManager: NetworkManagerProtocol
+    init(networkManager: NetworkManagerProtocol) {
+        self.networkManager = networkManager
     }
     
     func getProduct(id: Int) async throws -> Product {
-        try await fetchProductDetailUseCase.execute(id: id)
+        let productDTO: ProductDTO = try await networkManager.fetch(urlStr: APIUrl.productDetails(id: id))
+        return Mapper.toProduct(dto: productDTO)
     }
         
 }
