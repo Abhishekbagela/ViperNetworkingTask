@@ -14,7 +14,7 @@ public extension View {
             return AnyView(self)
         }
         
-        let skeletonColor = Color.gray.opacity(0.3)
+        let skeletonColor = Theme.Colors.lightGray
         
         return AnyView(
             opacity(0)

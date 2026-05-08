@@ -11,7 +11,7 @@ protocol ProductListInteractorProtocol {
     func getProductList() async throws -> [Product]
 }
 
-class ProductListInteractor: ProductListInteractorProtocol {
+final class ProductListInteractor: ProductListInteractorProtocol {
     
     let fetchProductListUseCase: FetchProductListUseCaseProtocol
     init(fetchProductListUseCase: FetchProductListUseCaseProtocol) {

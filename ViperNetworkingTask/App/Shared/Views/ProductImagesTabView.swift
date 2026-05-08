@@ -19,8 +19,13 @@ struct ProductImagesTabView: View {
         VStack {
             TabView(selection: $selectedTab) {
                 ForEach(0..<totalImages, id: \.self) { imageCount in
-                    AsyncImageDownloader(url: images[imageCount])
-                        .tag(imageCount)
+                    AsyncImageView(url: images[imageCount]) {
+                        ProgressView()
+                            .contentShape(Rectangle())
+                            .frame(width: 200, height: 200)
+                    }
+                    .cornerRadius(Theme.cornerRadiusMin)
+                    .tag(imageCount)
                 }
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
@@ -30,8 +35,8 @@ struct ProductImagesTabView: View {
                 HStack {
                     ForEach(0..<totalImages, id: \.self) { count in
                         Circle()
-                            .frame(width: 10, height: 10)
-                            .foregroundStyle(selectedTab == count ? .black : .gray)
+                            .frame(width: Theme.Spacing.P.medium, height: Theme.Spacing.P.medium)
+                            .foregroundStyle(selectedTab == count ? Theme.Colors.black : Theme.Colors.gray)
                             .contentShape(Rectangle())
                             .onTapGesture {
                                 withAnimation {

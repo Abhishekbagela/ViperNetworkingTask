@@ -10,7 +10,7 @@ import SwiftUI
 struct RatingView: View {
     let label: String
     let rating: Int
-    var alignment: Position = .leading
+    var alignment = Theme.Positions.VerticalAlignments.left
     
     enum Position {
         case leading
@@ -20,16 +20,20 @@ struct RatingView: View {
     var body: some View {
         HStack {
             Text(label)
-                .font(.headline)
+                .font(Theme.Typography.headline)
                 .bold()
-            if alignment == .trailing {
+            if alignment == Theme.Positions.VerticalAlignments.right {
                 Spacer()
             }
             ForEach(0..<rating, id:\ .self) { count in
-                HStack(spacing: -5) {
+                HStack(spacing: Theme.Spacing.N.verySmall) {
                     Image(systemName: "star.fill")
                         .resizable()
-                        .frame(width: 15, height: 15, alignment: .trailing)
+                        .frame(
+                            width: Theme.Spacing.P.big,
+                            height: Theme.Spacing.P.big,
+                            alignment: Theme.Positions.VerticalAlignments.right
+                        )
                 }
             }
         }
@@ -37,5 +41,5 @@ struct RatingView: View {
 }
 
 #Preview {
-    RatingView(label: "", rating: 0, alignment: .leading)
+    RatingView(label: "", rating: 0, alignment: Theme.Positions.VerticalAlignments.left)
 }

@@ -20,7 +20,7 @@ struct ProductListView<P: ProductListPresenterProtocol>: View where P: Observabl
         VStack {
             switch presenter.uiState {
             case .idle:
-                Color.clear
+                Theme.Colors.clear
                 
             case .loading:
                 ProgressView()
@@ -28,7 +28,7 @@ struct ProductListView<P: ProductListPresenterProtocol>: View where P: Observabl
             case .failure(let error):
                 Text(error.localizedDescription)
                     .padding(.horizontal)
-                    .foregroundStyle(Color.gray.opacity(0.5))
+                    .foregroundStyle(Theme.Colors.gray.opacity(0.5))
                     .font(.title2)
                 
             case .success(_):
@@ -49,23 +49,20 @@ struct ProductListView<P: ProductListPresenterProtocol>: View where P: Observabl
     private func productListView(_ products: [Product]) -> some View {
         ScrollView(showsIndicators: false) {
             ForEach(products, id: \.id) { product in
-                HStack(spacing: 10) {
-                    AsyncImage(url: product.thumbnail) { Image in
-                        Image
-                            .resizable()
-                    } placeholder: {
+                HStack(spacing: Theme.Spacing.P.medium) {
+                    AsyncImageView(url: product.thumbnail) {
                         ProgressView()
                     }
                     .contentShape(Rectangle())
                     .frame(width: 70, height: 70)
-                    .background(Color.gray.opacity(0.5))
-                    .cornerRadius(8)
+                    .background(Theme.Colors.lightGray)
+                    .cornerRadius(Theme.cornerRadiusMin)
                     
-                    VStack(alignment: .leading) {
+                    VStack(alignment: Theme.Positions.HorizontalAlignments.left) {
                         Text(product.title)
-                            .font(.headline)
+                            .font(Theme.Typography.headline)
                         Text(product.description)
-                            .font(.subheadline)
+                            .font(Theme.Typography.subheadline)
                             .lineLimit(2)
                         Spacer()
                     }

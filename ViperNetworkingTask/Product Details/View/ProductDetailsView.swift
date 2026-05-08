@@ -35,8 +35,8 @@ struct ProductDetailsView<P: ProductDetailPresenterProtocol>: View {
             case .failure(let error):
                 Text(error.localizedDescription)
                     .padding(.horizontal)
-                    .foregroundStyle(Color.gray.opacity(0.5))
-                    .font(.title2)
+                    .foregroundStyle(Theme.Colors.lightGray)
+                    .font(Theme.Typography.big)
             }
         }
         .enableInjection()
@@ -48,51 +48,34 @@ struct ProductDetailsView<P: ProductDetailPresenterProtocol>: View {
     }
     
     private func productDetailsView(product: Product) -> some View {
-        VStack(alignment: .leading, spacing: 15) {
+        VStack(
+            alignment: Theme.Positions.HorizontalAlignments.left,
+            spacing: Theme.Spacing.P.big
+        ) {
+            
             ProductImagesTabView(images: product.images)
             
             Text(product.title)
-                .font(.title)
+                .font(Theme.Typography.title)
                 .bold()
             //                .skeleton(isLoading: productDetailsPresentor.uiState == .loading)
             
-            keyValueMultilineRowView(key: "Product Information", value: product.description)
+            KeyValueMultilineRowView(key: "Product Information", value: product.description)
             //                .skeleton(isLoading: productDetailsPresentor.uiState == .loading)
             
             Group {
-                keyValueRowView(key: "Price", value: String(product.price))
+                KeyValueRowView(key: "Price", value: String(product.price))
                 //                    .skeleton(isLoading: productDetailsPresentor.uiState == .loading)
                 RatingView(label: "Rating", rating: Int(product.rating))
                 //                    .skeleton(isLoading: productDetailsPresentor.uiState == .loading)
-                keyValueRowView(key: "Stock", value: String(product.stock))
+                KeyValueRowView(key: "Stock", value: String(product.stock))
                 //                    .skeleton(isLoading: productDetailsPresentor.uiState == .loading)
-                keyValueRowView(key: "Return Policy", value: product.returnPolicy)
+                KeyValueRowView(key: "Return Policy", value: product.returnPolicy)
                 //                    .skeleton(isLoading: productDetailsPresentor.uiState == .loading)
             }
             .font(.footnote)
         }
         .padding()
-    }
-    
-    private func keyValueRowView(key: String, value: String) -> some View {
-        HStack(spacing: 15) {
-            Text(key)
-                .font(.headline)
-                .bold()
-            Text(value)
-                .font(.callout)
-        }
-    }
-    
-    private func keyValueMultilineRowView(key: String, value: String) -> some View {
-        VStack(alignment: .leading, spacing: 15) {
-            Text(key)
-                .font(.headline)
-                .bold()
-            Text(value)
-                .font(.callout)
-                .lineLimit(4)
-        }
     }
     
     private func productReviewView(reviews: [ReviewDTO]) -> some View {
@@ -110,13 +93,13 @@ struct ProductDetailsView<P: ProductDetailPresenterProtocol>: View {
                             Text(DateUtility.shared.formateTo(type: .MMM_d_time_AM, date: review.date))
                         }
                         .font(.callout)
-                        .foregroundStyle(Color.gray)
+                        .foregroundStyle(Theme.Colors.gray)
                         
                         RatingView(label: review.comment, rating: review.rating, alignment: .trailing)
                     }
                     .padding()
                     .background(Color.gray.opacity(0.1))
-                    .cornerRadius(8)
+                    .cornerRadius(Theme.cornerRadiusMin)
                     .padding(.horizontal)
                 }
             }
