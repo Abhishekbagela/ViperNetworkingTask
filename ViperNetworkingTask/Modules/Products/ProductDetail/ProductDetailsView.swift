@@ -66,7 +66,7 @@ struct ProductDetailsView<P: ProductDetailPresenterProtocol>: View {
             Group {
                 KeyValueRowView(key: "Price", value: String(product.price))
                 //                    .skeleton(isLoading: productDetailsPresentor.uiState == .loading)
-                RatingView(label: "Rating", rating: Int(product.rating))
+                ProductRatingView(label: "Rating", rating: Int(product.rating))
                 //                    .skeleton(isLoading: productDetailsPresentor.uiState == .loading)
                 KeyValueRowView(key: "Stock", value: String(product.stock))
                 //                    .skeleton(isLoading: productDetailsPresentor.uiState == .loading)
@@ -95,7 +95,7 @@ struct ProductDetailsView<P: ProductDetailPresenterProtocol>: View {
                         .font(.callout)
                         .foregroundStyle(Theme.Colors.gray)
                         
-                        RatingView(label: review.comment, rating: review.rating, alignment: .trailing)
+                        ProductRatingView(label: review.comment, rating: review.rating, alignment: .trailing)
                     }
                     .padding()
                     .background(Color.gray.opacity(0.1))

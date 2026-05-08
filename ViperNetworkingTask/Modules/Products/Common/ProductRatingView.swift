@@ -1,5 +1,5 @@
 //
-//  RatingView.swift
+//  ProductRatingView.swift
 //  ViperNetworkingTask
 //
 //  Created by Abhishek Bagela on 05/05/26.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RatingView: View {
+struct ProductRatingView: View {
     let label: String
     let rating: Int
     var alignment = Theme.Positions.VerticalAlignments.left
@@ -41,5 +41,9 @@ struct RatingView: View {
 }
 
 #Preview {
-    RatingView(label: "", rating: 0, alignment: Theme.Positions.VerticalAlignments.left)
+    ProductRatingView(
+        label: "",
+        rating: 0,
+        alignment: Theme.Positions.VerticalAlignments.left
+    )
 }
